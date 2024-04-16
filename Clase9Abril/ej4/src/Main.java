@@ -1,7 +1,6 @@
 import Classes.Door;
 import Classes.House;
 
-import javax.net.ssl.HostnameVerifier;
 import java.util.List;
 
 public class Main {
