@@ -1,0 +1,62 @@
+package TrabajoPractico3.ejercicio1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Asignatura {
+    private int aula;
+    private String hora;
+    private String nombre;
+    private List<Grupo> grupos;
+
+    public Asignatura() {
+    }
+
+    public Asignatura(int aula, String hora, String nombre) {
+        this.aula = aula;
+        this.hora = hora;
+        this.nombre = nombre;
+        this.grupos = new ArrayList<>();
+    }
+
+    public int getAula() {
+        return aula;
+    }
+
+    public void setAula(int aula) {
+        this.aula = aula;
+    }
+
+    public String getHora() {
+        return hora;
+    }
+
+    public void setHora(String hora) {
+        this.hora = hora;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public List<Grupo> getGrupos() {
+        return grupos;
+    }
+
+    public void setGrupos(List<Grupo> grupos) {
+        this.grupos = grupos;
+    }
+
+    public void addGrupo(Grupo grupo){
+        grupos.add(grupo);
+    }
+
+    public void mostrarDatosGrupo(Grupo grup){
+        grup.mostrarDatos();
+
+    }
+}
