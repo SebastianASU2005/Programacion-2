@@ -16,12 +16,19 @@ public class main {
 
             if (alu.getNombre().equals("fin")) {
                 break;
+            }  try {
+                System.out.print("Ingrese edad: ");
+                alu.setEdad(leer.nextInt());
+
+                System.out.print("Ingrese nota: ");
+                alu.setNota(leer.nextDouble());
+
+                alumnos.add(alu);
+            } catch (Exception e) {
+                System.out.println("Error: Por favor, ingrese un valor válido para la edad o la nota.");
+                leer.next(); // Limpiar el buffer del scanner
             }
-            System.out.print("ingrese edad: ");
-            alu.setEdad(leer.nextInt());
-            System.out.print("ingrese nota: ");
-            alu.setNota(leer.nextDouble());
-            alumnos.add(alu);
+
         }
 
         double sum = 0;

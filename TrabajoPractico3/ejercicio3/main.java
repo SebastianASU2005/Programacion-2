@@ -13,13 +13,14 @@ public class main {
         //Crea una lista que contenga los días de la semana, luego:  Inserta en la posición 4 el elemento “Juernes”.
 
         for (int i = 0; i < 7; i++) {
-            String dia;
             try {
-                System.out.println("ingrese dia");
-                dia = leer.next();
+                System.out.println("Ingrese un día:");
+                String dia = leer.nextLine();
                 dias.add(dia);
             } catch (Exception e) {
-                System.out.println("se produjo un error");
+                System.out.println("Error: Se produjo un error al ingresar el día.");
+                // Si ocurre un error, decrementar el contador para intentar ingresar el día nuevamente.
+                i--;
             }
         }
 

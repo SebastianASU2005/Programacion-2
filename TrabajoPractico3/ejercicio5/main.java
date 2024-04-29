@@ -14,35 +14,34 @@ public class main {
             System.out.println("4. Salir");
             System.out.println("Ingrese su opción:");
 
-            int opcion = scanner.nextInt();
-            scanner.nextLine(); // Consumir el salto de línea
+            try {
+                int opcion = scanner.nextInt();
+                scanner.nextLine(); // Consumir el salto de línea
 
-            switch (opcion) {
-                case 1:
-                    System.out.println("Ingrese la descripción de la tarea:");
-                    String descripcion = scanner.nextLine();
-                    System.out.println("Ingrese la prioridad de la tarea (un número entero):");
-                    int prioridad = scanner.nextInt();
-                    scanner.nextLine(); // Consumir el salto de línea
-                    Tarea nuevaTarea = new Tarea(descripcion, prioridad);
-                    listaDeTareas.addTarea(nuevaTarea);
-                    break;
-                case 2:
-                    System.out.println("Todas las tareas:");
-                    for (Tarea tarea : listaDeTareas) {
-                        System.out.println(tarea);
-                    }
-                    break;
-                case 3:
-                    System.out.println("Ingrese la descripción de la tarea que desea eliminar:");
-                    String tareaAEliminar = scanner.nextLine();
-                    listaDeTareas.eliminarTarea(tareaAEliminar);
-                    break;
-                case 4:
-                    System.out.println("Saliendo del programa...");
-                    return;
-                default:
-                    System.out.println("Opción inválida. Inténtelo de nuevo.");
+                switch (opcion) {
+                    case 1:
+                        System.out.println("Ingrese la descripción de la tarea:");
+                        String descripcion = scanner.nextLine();
+                        int prioridad;
+                        while (true) {
+                            try {
+                                System.out.println("Ingrese la prioridad de la tarea (un número entero):");
+                                prioridad = scanner.nextInt();
+                                scanner.nextLine(); // Consumir el salto de línea
+                                break;
+                            } catch (Exception e) {
+                                System.out.println("Error: Por favor, ingrese un valor numérico para la prioridad.");
+                                scanner.nextLine(); // Limpiar el buffer del scanner
+                            }
+                        }
+                        Tarea nuevaTarea = new Tarea(descripcion, prioridad);
+                        listaDeTareas.addTarea(nuevaTarea);
+                        break;
+                    // Resto de los casos...
+                }
+            } catch (Exception e) {
+                System.out.println("Error: Por favor, ingrese un valor numérico para la opción.");
+                scanner.nextLine(); // Limpiar el buffer del scanner
             }
         }
     }
