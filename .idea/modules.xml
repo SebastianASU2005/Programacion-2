@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EJ1/EJ1.iml" filepath="$PROJECT_DIR$/EJ1/EJ1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TrabajoPractico4/EJ1/EJ1.iml" filepath="$PROJECT_DIR$/TrabajoPractico4/EJ1/EJ1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TrabajoPractico4/EJ2/EJ2.iml" filepath="$PROJECT_DIR$/TrabajoPractico4/EJ2/EJ2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TrabajoPractico4/EJ3/EJ3.iml" filepath="$PROJECT_DIR$/TrabajoPractico4/EJ3/EJ3.iml" />
       <module fileurl="file://$PROJECT_DIR$/EjreciciosPracticaArreglosAbril16/Ej1/Ej1.iml" filepath="$PROJECT_DIR$/EjreciciosPracticaArreglosAbril16/Ej1/Ej1.iml" />
       <module fileurl="file://$PROJECT_DIR$/TrabajoPractico/Ej10/Ej10.iml" filepath="$PROJECT_DIR$/TrabajoPractico/Ej10/Ej10.iml" />
       <module fileurl="file://$PROJECT_DIR$/EjreciciosPracticaArreglosAbril16/Ej2/Ej2.iml" filepath="$PROJECT_DIR$/EjreciciosPracticaArreglosAbril16/Ej2/Ej2.iml" />
@@ -19,6 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/ClaseAbril23/EjercicioExepciones/EjercicioExepciones.iml" filepath="$PROJECT_DIR$/ClaseAbril23/EjercicioExepciones/EjercicioExepciones.iml" />
       <module fileurl="file://$PROJECT_DIR$/Herencia/Herencia Ej1/Herencia Ej1.iml" filepath="$PROJECT_DIR$/Herencia/Herencia Ej1/Herencia Ej1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Herencia/Herencia ejercicio 2/Herencia ejercicio 2.iml" filepath="$PROJECT_DIR$/Herencia/Herencia ejercicio 2/Herencia ejercicio 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Parcial1/Parcial/Parcial.iml" filepath="$PROJECT_DIR$/Parcial1/Parcial/Parcial.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Programacion2.iml" filepath="$PROJECT_DIR$/.idea/Programacion2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Clase9Abril/ej1/ej1.iml" filepath="$PROJECT_DIR$/Clase9Abril/ej1/ej1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Clase9Abril/ej2/ej2.iml" filepath="$PROJECT_DIR$/Clase9Abril/ej2/ej2.iml" />
