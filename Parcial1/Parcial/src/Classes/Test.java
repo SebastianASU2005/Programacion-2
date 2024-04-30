@@ -16,7 +16,7 @@ public class Test {
         this.code = code;
         this.tittle = tittle;
         this.facility = facility;
-        this.participates=new ArrayList<>();
+        this.participates=participates;
     }
 
     public Facility getFacility() {

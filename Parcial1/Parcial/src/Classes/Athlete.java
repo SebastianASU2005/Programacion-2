@@ -54,4 +54,12 @@ public class Athlete extends Person implements Contract{
         return 0;
     }
 
+    @Override
+    public String toString() {
+        return "Athlete{" +
+                "height=" + height +
+                ", age=" + age +
+                ", weight=" + weight +
+                '}';
+    }
 }
